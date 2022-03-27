@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="注册"
+        style="@style/p58TypeFace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="204.5dp"
+            android:layout_height="match_parent">
+            <ImageView
+                style="@style/p58TuPian"
+                android:src="@drawable/qq_icon" />
+
+            <Button
+                android:id="@+id/YongQQ"
+                style="@style/p58Button23"
+                android:text="用QQ注册" />
+        </RelativeLayout>
+        <LinearLayout
+            style="@style/p58vLine"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="204.5dp"
+            android:layout_height="match_parent">
+            <ImageView
+                style="@style/p58TuPian"
+                android:src="@drawable/weixin_icon" />
+
+            <Button
+                android:id="@+id/YongWeiXin"
+                style="@style/p58Button23"
+                android:text="用微信注册" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/p58hLine"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <ImageView
+            style="@style/p58TuPian"
+            android:src="@drawable/email_icon" />
+
+        <Button
+            android:id="@+id/YongEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用电子邮箱注册"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            style="@style/p58TypeFace"
+            android:background="@color/Transparent" />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/p58hLine"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:text="名字"
+                style="@style/p58TypeFace"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/p58Name"
+                android:hint="输入您的名字"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/p58hLine"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:text="邮箱"
+                style="@style/p58TypeFace"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/p58Email"
+                android:hint="输入您的邮箱"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/p58hLine"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:text="密码"
+                style="@style/p58TypeFace"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/p58Password"
+                android:hint="输入您的密码"
+                android:maxLines="1"
+                android:password="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/p58hLine"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:text="性别"
+                style="@style/p58TypeFace"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Sex"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SexB"
+                    android:text="男"
+                    style="@style/p58TypeFace"
+                    android:layout_marginTop="25dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    style="@style/p58TypeFace"
+                    android:layout_marginTop="25dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/p58hLine"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:text="兴趣爱好"
+                style="@style/p58TypeFace"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    style="@style/p58CheckboxS"
+                    android:id="@+id/p58Sing"
+                    android:text="唱歌" />
+                <CheckBox
+                    style="@style/p58CheckboxS"
+                    android:id="@+id/p58Dance"
+                    android:text="跳舞"/>
+                <CheckBox
+                    style="@style/p58CheckboxS"
+                    android:id="@+id/p58Read"
+                    android:text="读书"/>
+                <CheckBox
+                    style="@style/p58CheckboxS"
+                    android:id="@+id/p58Run"
+                    android:text="跑步"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/p58hLine"></LinearLayout>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/p58TypeFace"
+        android:text="提交"
+        android:background="@color/Transparent"/>
+</LinearLayout>
